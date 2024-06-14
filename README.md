@@ -1,38 +1,35 @@
 # MikroTik Automation Scripts
 
 This repository contains automation scripts for managing MikroTik routers, specifically focusing on bandwidth configuration, SNMP settings.
-Features
+## Features
 
-    Bandwidth Script Management: Upload and remove bandwidth configuration scripts (bandwidth-10-211.rsc and bandwidth-10-144.rsc) to/from MikroTik routers in specified networks.
-    SNMP Configuration: Automate SNMP settings for network supervision and management.
-    Firewall Rules: Example included for adding firewall rules to allow SNMP traffic on specific network range.
+- Bandwidth Script Management: Upload and remove bandwidth configuration scripts (bandwidth-10-211.rsc and bandwidth-10-144.rsc) to/from MikroTik routers in specified networks.
+- SNMP Configuration: Automate SNMP settings for network supervision and management.
+- Firewall Rules: Example included for adding firewall rules to allow SNMP traffic on specific network range.
 
-Prerequisites
+## Prerequisites
 
-sshpass: Required for non-interactive SSH password authentication.
-
+- sshpass: Required for non-interactive SSH password authentication.
+```bash
     sudo apt install sshpass
-
-mysql: Required for retrieving IP addresses from the MySQL database.
-
+```
+- mysql: Required for retrieving IP addresses from the MySQL database.
+```bash
     sudo apt install mysql-client
+```
+## Installation
 
-Installation
-
-Clone the repository:
-
+1. Clone the repository:
+```bash
     git clone https://github.com/codi639/mikrotik-automation.git
     cd mikrotik-automation
+```
+2. Update configuration:
 
-Update configuration:
+- Modify script_path_211, script_path_144, remote_file_path, router_ips_211, and router_ips_144 variables in mikrotik-automation.sh according to your environment.
 
-    Modify script_path_211, script_path_144, remote_file_path, router_ips_211, and router_ips_144 variables in mikrotik-automation.sh according to your environment.
 
-Make the script executable:
-
-    chmod +x mikrotik-automation.sh
-
-Usage
+## Usage
 
 1. Run the script:
 
