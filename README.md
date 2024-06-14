@@ -48,7 +48,7 @@ This repository contains automation scripts for managing MikroTik routers, speci
 
 4. Follow on-screen instructions to complete the selected action.
 
-Example
+## Example
 
 - Push bandwidth script and SNMP configuration to routers in Network 10.211.0.0/24:
 
