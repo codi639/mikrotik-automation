@@ -40,22 +40,22 @@ Usage
 ./mikrotik-automation.sh
 ```
 
-Select the network:
-        Choose between Network 10.211.0.0/24 or Network 10.144.1.0/24.
+2. Select the network:
+   - Choose between Network 10.211.0.0/24 or Network 10.144.1.0/24.
 
-    Choose an action:
-        Push script: Uploads bandwidth script to routers.
-        Remove script: Removes bandwidth script from routers.
-        Push script and SNMP: Uploads bandwidth script and configures SNMP settings.
-        Remove script and SNMP: Removes bandwidth script and deactivates SNMP.
+3. Choose an action:
+   - Push script: Uploads bandwidth script to routers.
+   - Remove script: Removes bandwidth script from routers.
+   - Push script and SNMP: Uploads bandwidth script and configures SNMP settings.
+   - Remove script and SNMP: Removes bandwidth script and deactivates SNMP.
 
-    Follow on-screen instructions to complete the selected action.
+4. Follow on-screen instructions to complete the selected action.
 
 Example
 
-    Push bandwidth script and SNMP configuration to routers in Network 10.211.0.0/24:
+- Push bandwidth script and SNMP configuration to routers in Network 10.211.0.0/24:
 
-    bash
+```bash
 
 ./mikrotik-automation.sh
 Select an option:
@@ -70,3 +70,4 @@ Select an action for Network 10.211.0.0/24:
 3: Remove script and SNMP
 5: Exit
 Enter your choice (0, 1, 2, or 3): 2
+```
