@@ -1,6 +1,7 @@
 # MikroTik Automation Scripts
 
 This repository contains automation scripts for managing MikroTik routers, specifically focusing on bandwidth configuration, SNMP settings.
+
 ## Features
 
 - Bandwidth Script Management: Upload and remove bandwidth configuration scripts (bandwidth-10-211.rsc and bandwidth-10-144.rsc) to/from MikroTik routers in specified networks.
@@ -10,24 +11,28 @@ This repository contains automation scripts for managing MikroTik routers, speci
 ## Prerequisites
 
 - sshpass: Required for non-interactive SSH password authentication.
+- 
 ```bash
-    sudo apt install sshpass
+sudo apt install sshpass
 ```
+
 - mysql: Required for retrieving IP addresses from the MySQL database.
+
 ```bash
-    sudo apt install mysql-client
+sudo apt install mysql-client
 ```
 ## Installation
 
 1. Clone the repository:
+2. 
 ```bash
-    git clone https://github.com/codi639/mikrotik-automation.git
-    cd mikrotik-automation
+git clone https://github.com/codi639/mikrotik-automation.git
+cd mikrotik-automation
 ```
+
 2. Update configuration:
 
 - Modify script_path_211, script_path_144, remote_file_path, router_ips_211, and router_ips_144 variables in mikrotik-automation.sh according to your environment.
-
 
 ## Usage
 
@@ -53,7 +58,6 @@ This repository contains automation scripts for managing MikroTik routers, speci
 - Push bandwidth script and SNMP configuration to routers in Network 10.211.0.0/24:
 
 ```bash
-
 ./mikrotik-automation.sh
 Select an option:
 0: Network 10.211.0.0/24
