@@ -11,7 +11,7 @@ This repository contains automation scripts for managing MikroTik routers, speci
 ## Prerequisites
 
 - sshpass: Required for non-interactive SSH password authentication.
-- 
+
 ```bash
 sudo apt install sshpass
 ```
@@ -24,7 +24,7 @@ sudo apt install mysql-client
 ## Installation
 
 1. Clone the repository:
-2. 
+
 ```bash
 git clone https://github.com/codi639/mikrotik-automation.git
 cd mikrotik-automation
