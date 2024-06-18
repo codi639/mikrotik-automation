@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #########################################################################################
-# This script automates the process of sending bandwidth scripts to MikroTik routers    #
-# and configuring SNMP settings. It also manages firewall rules for the 10.144.0.0/16   #
+# This script automates the process of sending scripts to MikroTik routers and          #
+# configuring SNMP settings. It also manages firewall rules for the 10.144.0.0/16       #
 # network.                                                                              #
 #########################################################################################
 
