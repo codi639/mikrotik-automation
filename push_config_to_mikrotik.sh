@@ -6,13 +6,6 @@
 # network.                                                                              #
 #########################################################################################
 
-# To obtain a fresh list of IP addresses from routers in the network 10.144.0.0/16,
-# run the following command in a terminal:
-# mysql -u backup -pThe_good_password radius -h 172.16.20.3 -N \
-# -B -e "SELECT value FROM radreply WHERE attribute='DHCP-Your-IP-Address';" \
-# > /home/user/router-10-144.txt
-# Note: The 'backup' user can only connect from the VM backup (172.16.20.39).
-
 # Define colors
 RED='\033[0;31m'
 GREEN='\033[0;32m'
