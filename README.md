@@ -1,6 +1,6 @@
 # MikroTik Automation Scripts
 
-This repository contains automation scripts for managing MikroTik routers, specifically focusing on bandwidth configuration, SNMP settings.
+This repository contains a script for managing MikroTik routers, specifically focusing on posting scripts and SNMP configurations.
 
 ## Features
 
