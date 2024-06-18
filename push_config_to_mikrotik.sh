@@ -22,6 +22,9 @@ remote_file_path="/bandwidth.rsc"
 router_ips_211="/root/supervision_mikrotik/router-10-211.txt"
 router_ips_144="/root/supervision_mikrotik/router-10-144.txt"
 
+# SNMP parameters
+community="supervision"
+
 # Function to upload file to MikroTik router
 upload_script_to_router() {
     local router_ip=$1
@@ -95,10 +98,10 @@ upload_snmp_to_router() {
     # Set SNMP community
     sshpass -p$password ssh -q -oUserKnownHostsFile="/dev/null" -oStrictHostKeyChecking=no \
     -oConnectTimeout=5 -oKexAlgorithms=diffie-hellman-group14-sha1 "$username"@"$router_ip" \
-    '/snmp community set public name=supervision addresses=::/0'
+    '/snmp community set public name=$community addresses=::/0'
 
     if [ $? -eq 0 ]; then
-        echo -e "${GREEN}SNMP community successfully set on $router_ip.${NC}"
+        echo -e "${GREEN}SNMP community $community successfully set on $router_ip.${NC}"
     else
         echo -e "${RED}Failed to set SNMP community on $router_ip.${NC}"
     fi
@@ -124,10 +127,10 @@ disable_snmp_to_router() {
     # Change SNMP community
     sshpass -p$password ssh -q -oUserKnownHostsFile="/dev/null" -oStrictHostKeyChecking=no \
     -oConnectTimeout=5 -oKexAlgorithms=diffie-hellman-group14-sha1 "$username"@"$router_ip" \
-    '/snmp community set supervision name=public'
+    '/snmp community set $community name=public'
 
     if [ $? -eq 0 ]; then
-        echo -e "${GREEN}SNMP community successfully changed on $router_ip.${NC}"
+        echo -e "${GREEN}SNMP community $community successfully changed on $router_ip.${NC}"
     else
         echo -e "${RED}Failed to change SNMP community on $router_ip.${NC}"
     fi
