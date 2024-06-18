@@ -2,8 +2,7 @@
 
 #########################################################################################
 # This script automates the process of sending scripts to MikroTik routers and          #
-# configuring SNMP settings. It also manages firewall rules for the 10.144.0.0/16       #
-# network.                                                                              #
+# configuring SNMP settings.                                                            #
 #########################################################################################
 
 # Define colors
