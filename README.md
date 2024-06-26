@@ -16,11 +16,6 @@ This repository contains a script for managing MikroTik routers, specifically fo
 sudo apt install sshpass
 ```
 
-- mysql: Required for retrieving IP addresses from the MySQL database.
-
-```bash
-sudo apt install mysql-client
-```
 ## Installation
 
 1. Clone the repository:
