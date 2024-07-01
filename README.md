@@ -27,7 +27,7 @@ cd mikrotik-automation
 
 2. Update configuration:
 
-- Modify `username`, `password`, `script_path_211`, `script_path_144`, `remote_file_path`, `router_ips_211`, `router_ips_144` and `community` variables in `mikrotik-automation.sh` according to your environment.
+- Modify `username`, `password`, `script_path_211`, `script_path_144`, `remote_file_path`, `router_ips_211`, `router_ips_144`, `community` and `SNMP_server` variables in `mikrotik-automation.sh` according to your environment.
 - Ensure SSH commands in `push_config_to_mikrotik.sh` are adapted if necessary, particularly regarding the `-o KexAlgorithms=diffie-hellman-group14-sha1` parameter, which may vary depending on your SSH server configuration.
 
 ## Usage
