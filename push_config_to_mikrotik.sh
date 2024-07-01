@@ -17,6 +17,7 @@ password="admin"
 script_path_211="/root/supervision_mikrotik/bandwidth-10-211.rsc"
 script_path_144="/root/supervision_mikrotik/bandwidth-10-144.rsc"
 remote_file_path="/bandwidth.rsc"
+SNMP_server="@IP"
 
 # List of router IPs
 router_ips_211="/root/supervision_mikrotik/router-10-211.txt"
@@ -249,7 +250,7 @@ while [[ $choice != "exit" ]]; do
                         -oStrictHostKeyChecking=no -oConnectTimeout=5 \
                         -oKexAlgorithms=diffie-hellman-group14-sha1 "$username"@"$router_ip" \
                         '/ip firewall filter add place-before=2 chain=input protocol=udp \
-                        dst-port=161 src-address=10.144.0.35 action=accept comment="Allow SNMP traffic"'
+                        dst-port=161 src-address=$SNMP_server action=accept comment="Allow SNMP traffic"'
 
                         echo
                     done
