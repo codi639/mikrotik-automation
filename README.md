@@ -35,7 +35,7 @@ cd mikrotik-automation
 1. Run the script:
 
 ```bash
-./mikrotik-automation.sh
+./push_config_to_mikrotik.sh
 ```
 
 2. Select the network:
